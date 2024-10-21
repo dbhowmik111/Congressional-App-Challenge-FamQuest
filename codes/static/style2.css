@@ -1,0 +1,98 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(98, 161, 238);
+    position: relative;
+    margin: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.code{
+    border: 5px solid white;
+    margin: auto;
+    max-width: 300px;
+    margin-top: 100px;
+    text-align:center;
+    color: black;
+    font-size: 30px;
+}
+
+.start__message{
+    
+    text-align:center;
+    color: black;
+    font-size: 25px;
+}
+
+.form__text{
+    
+    text-align:center;
+    color: black;
+    font-size: 25px;
+}
+
+.form__link{
+    text-align:center;
+    color: rgb(26, 1, 171);
+    font-size: 25px;
+}
+
+.misc__message{
+    margin: auto;
+    text-align:center;
+    color: black;
+    font-size: 25px;
+    height: 90vh;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    
+}
+
+.logout{
+    position:absolute;
+    top: 5vh;
+    right: 5vh;
+    font-size: 15px;
+    text-align: right;
+}
+
+.logout-button{
+    background-color: rgb(8, 15, 207);
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem rgb(98, 98, 207);
+    position: relative;
+}
+
+.lboard-button{
+    background-color: rgb(8, 15, 207);
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem rgb(98, 98, 207);
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

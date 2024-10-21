@@ -1,0 +1,146 @@
+*, *::before, *::after {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(21, 21, 211);
+    padding: 5rem 0;
+    counter-reset: list;
+}
+
+.leaderboard{
+    width:90%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 0.2rem;
+    padding: 2rem 0;
+    box-shadow: 0 0.5rem 1rem rgb(112, 112, 230);
+    position: relative;
+}
+
+h2{
+    margin-left:2rem;
+    font-size: 1.8rem;
+}
+
+ol{
+    margin-top: 2rem;
+}
+
+li{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    font-weight: 700;
+    opacity: .8;
+}
+
+li:nth-of-type(odd){
+    background: #4e4d4d50;
+}
+
+li.family{
+    background-color: rgb(44, 97, 211);  
+    opacity:1;
+    box-shadow: 0 0.2rem 0.5rem rgb(91, 91, 207);
+    transform:scale(1.03);
+}
+
+li::before{
+    counter-increment: list;
+    content: counter(list);
+}
+
+ul.family{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    font-weight: 700;
+    opacity: .8;
+    background-color: rgb(4, 4, 178);  
+    opacity:1;
+    box-shadow: 0 0.2rem 0.5rem rgb(91, 91, 207);
+    transform:scale(1.03);
+}
+
+ul.nf{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    font-weight: 700;
+    opacity: .8;
+    background: #4e4d4d50;
+
+}
+
+.name{
+    margin: 0 auto 0 1rem;
+}
+
+.award{
+    display:flex;
+    align-content: center;
+    gap:1rem;
+}
+
+.buttons-container{
+    display:flex;
+    justify-content: center;
+    gap:1rem;
+    font-size: 17px;
+    margin: 2rem 0;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    padding:0.5rem 1rem;
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+}
+
+.logout{
+    background: transparent;
+    opacity: .5;
+    font-size: 15px;
+}
+
+.logout:hover {
+    color:blue;
+    opacity:1;
+}
+
+.home{
+    background-color: rgb(44, 97, 211);
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem rgb(98, 98, 207);
+    position: relative;
+    font-size: 15px;
+}
+
+.home:hover {
+    box-shadow: none;
+    top:0.1rem;
+    color: white;
+}
+
+.username{
+    position:absolute;
+    top: 5vh;
+    right: 5vh;
+    font-size: 15px;
+    text-align: right;
+}
