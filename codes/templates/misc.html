@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style2.css')}}">
+</head>
+<body>
+    <script src="js.js"></script>
+    <div class= misc__message>
+        {{message}}<br>{{message_2}}<br><br>
+        <p><b>Your article below</b></p>
+        {{article}}
+    </div>
+
+    <div class = "logout">
+        username: {{ username }}
+        <br>
+        <a href ="\logout"><button class="logout-button" value="Logout">LOGOUT</button></a>
+        <a href ="\leaderboard"><button class="lboard-button" value="Logout">LEADERBOARD</button></a>
+    </div>
+</body>
+</html>

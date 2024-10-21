@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='quiz.css')}}">
+</head>
+<body style="background-color: {{color}}">
+    <script src="js.js"></script>
+
+    <article class = "article"><b>{{ title }}</b><br><br>{{ art }}</article>
+    <div class="image-wrapper" style="background: {{color}}">
+    <img class="image" src="data: {{filename}}/png;base64, {{filename1}}">
+    </div>
+    <h2 class = "question">{{ question }}</h2>
+    <form action="/submitanswer" method="POST">
+        <div class = "answers">
+        <input type="radio" name="answer" id="opt1" value="1" class="question_answer">
+        <label for "rad1">{{ opt1 }}</label>
+        <br>
+        <input type="radio" name="answer" id="opt2" value="2" class="question_answer">
+        <label for "rad2">{{ opt2 }}</label>
+        <br>
+        <input type="radio" name="answer" id="opt3" value="3" class="question_answer">
+        <label for "rad1">{{ opt3 }}</label>
+        <br>
+        <input type="radio" name="answer" id="opt4" value="4" class="question_answer">
+        <label for "rad2">{{ opt4 }}</label>
+        </div>
+        <br>
+        <input type="submit" value="submit" url="/submitanswer" class="submit"> 
+        <div class= "space" style="color: {{color}}">helloo</div>
+        </form>
+    
+        <div class = "logout">
+            username: {{ username }}
+            <br>
+            <a href ="\logout"><button class="logout-button" value="Logout">logout</button></a>
+            <a href ="\leaderboard"><button class="lboard-button" value="Logout">leaderboard</button></a>
+        </div>
+</body>
+</html>
+

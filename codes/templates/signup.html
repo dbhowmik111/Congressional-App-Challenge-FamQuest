@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <script src="js.js"></script>
+    <div class="container">
+        <form action="\userregaction" method="POST" class="form">
+            <h1 class="form__title">Sign up</h1>
+            <div class="form__input-group">
+                <input type="text" autofocus placeholder="username or email" class="form__input" name="username">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" autofocus placeholder="family name" class="form__input" name="famname">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" autofocus placeholder="family code" class="form__input" name="code">
+                <div class="form__input-error-message"></div>
+            </div>
+            <input type="submit" value="Sign up" class="form__button" url="/userregaction">
+            <p class="form__text"> 
+                Don't have a family code or account?
+                <br>
+                <a href="\familyreg" class="form__link">Create family account</a>
+                <br><br>
+
+                Already have an account?
+                <a href="\login" id="linkCreateAccount" class="form__link">Login</a>
+            </p>
+            <div class= "message__color"><p>{{message}}</p><div>
+        </form>
+    </div>
+</body>
+</html>

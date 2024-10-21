@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Registration</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <script src="js.js"></script>
+    <div class="container">
+        <form action="\familyregaction" method="POST">
+            <h1 class="form__title">Family Registration</h1>
+            <div class="form__input-group">
+                <input type="text" autofocus placeholder="family name" name="family name" class="form__input">
+            </div>
+            <input type="submit" value="Sign up for Family" class="form__button" url="/familyregaction">  
+            <p class="form__text"> 
+                Already have a family account?
+                <br><br>
+                <a href="\userreg" id="linkCreateAccount" class="form__link">Sign up</a>
+                <br>or<br>
+                <a href="\login" id="linkCreateAccount" class="form__link">Login</a>
+            </p>
+            <br>
+            <div class="message__color">
+            <p>{{ message }}</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

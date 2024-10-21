@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEADERBOARD</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='lb.css')}}">
+</head>
+<body>
+    <script src="js.js"></script>
+    <section class="leaderboard">
+        <h2>Leaderboard</h2>
+        <ol>
+            <li class= "{{ f1 }}">
+                <p class="name">{{n1}}</p>
+                <div class="award">
+                    <p class="score">{{s1}}</p>
+                </div>
+            </li>
+            <li class="{{ f2 }}">
+                <p class="name">{{n2}}</p>
+                <div class="score">{{s2}}</div>
+            </li>
+            <li class="{{ f3 }}">
+                <p class="name">{{n3}}</p>
+                <div class="score">{{s3}}</div>
+            </li>
+            <li class="{{ f4 }}">
+                <p class="name">{{n4}}</p>
+                <div class="score">{{s4}}</div>
+            </li>
+            <ul class="{{ f5 }}" value="{{ r }}">
+                <div class="rank">{{r}}</div>
+                <p class="name">{{n5}}</p>
+                <div class="score">{{s5}}</div>
+            </ul>
+        </ol>
+        <div class="buttons-container">
+            <a href ="\logout"><button class="logout" value="Logout">logout</button></a>
+            <a href="\lboardaction"><button class="home">home</button></a>
+        </div>
+    </section>
+
+    <div class = "username">
+        username: {{ username }}
+    </div>
+</body>
+</html>
